@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="AppMob Store" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/Nama"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:hint="Masukkan Nama Pembeli !" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Membership" />
+
+    <RadioGroup
+        android:id="@+id/Radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/RadioGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Gold"/>
+
+        <RadioButton
+            android:id="@+id/RadioSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:id="@+id/RadioReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reguler"
+            android:layout_marginLeft="5dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Kode"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:hint="Kode Barang" />
+
+    <EditText
+        android:id="@+id/Jumlah"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:hint="Jumlah Barang" />
+
+    <Button
+        android:id="@+id/ProsesTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Proses"
+        android:onClick="ProsesTotal"/>
+
+
+</LinearLayout>
